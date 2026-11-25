@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Build files
+frontend/dist/
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Backend sensitive files
+backend/config/database.php
+
+# Logs
+*.log
+
+# Editor files
+.vscode/
+.idea/
+.DS_Store

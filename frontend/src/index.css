@@ -1,0 +1,405 @@
+
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    color: #212529;
+}
+
+.navbar {
+    min-height: 65px;
+}
+
+.dashboard-card {
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-3px);
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.card-header {
+    border-bottom: 1px solid #eeeeee;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+.form-control,
+.form-select {
+    min-height: 43px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+.btn {
+    border-radius: 7px;
+}
+
+footer {
+    font-size: 14px;
+}
+
+/* Professional Navbar */
+
+.sr-navbar {
+    min-height: 72px;
+    background: linear-gradient(135deg, #0d47a1, #1976d2);
+}
+
+.sr-brand-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.sr-navbar .navbar-brand {
+    font-size: 19px;
+    letter-spacing: 0.2px;
+}
+
+.sr-admin-badge {
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 9px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    .sr-navbar .navbar-brand {
+        font-size: 15px;
+    }
+
+    .sr-brand-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+
+    .sr-admin-badge {
+        font-size: 11px;
+        padding: 7px 9px;
+    }
+}
+
+/* Dashboard Statistics Cards */
+
+.student-stat-card {
+    border-radius: 14px;
+    transition: all 0.25s ease;
+    background: #ffffff;
+}
+
+.student-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.student-stat-card .card-body {
+    padding: 25px;
+}
+
+.student-stat-card h2 {
+    font-size: 30px;
+    color: #212529;
+}
+
+.stat-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+}
+
+.student-stat-card small {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+@media (max-width: 576px) {
+    .student-stat-card .card-body {
+        padding: 20px;
+    }
+
+    .student-stat-card h2 {
+        font-size: 25px;
+    }
+
+    .stat-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+}
+
+/* Professional Student Form */
+
+.student-form-card {
+    border-radius: 14px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.045) !important;
+}
+
+.student-form-header {
+    padding: 18px 22px !important;
+    background: #ffffff;
+}
+
+.student-form-body {
+    padding: 25px !important;
+}
+
+.student-form-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #344054;
+    margin-bottom: 8px;
+}
+
+.student-input {
+    min-height: 45px;
+    border: 1px solid #dce2ea;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.student-input:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.12);
+}
+
+.student-submit-btn {
+    min-height: 42px;
+    padding: 9px 22px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.student-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
+.student-reset-btn {
+    min-height: 42px;
+    padding: 9px 18px;
+    border-radius: 8px;
+}
+
+@media (max-width: 576px) {
+    .student-form-body {
+        padding: 16px !important;
+    }
+
+    .student-form-header {
+        padding: 15px !important;
+    }
+}
+
+/* Professional Student Records Table */
+
+.student-table-card {
+    border-radius: 14px !important;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.student-table-header {
+    background: #ffffff;
+    padding: 20px 24px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.student-count-badge {
+    background: #eaf2ff;
+    color: #0d6efd;
+    padding: 8px 13px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.student-table-body {
+    padding: 24px !important;
+}
+
+/* Table Header */
+
+.student-data-table thead th {
+    background: #edf3fb !important;
+    color: #344054;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 14px 12px !important;
+    border-bottom: 1px solid #dce4ef !important;
+    white-space: nowrap;
+}
+
+/* Table Body */
+
+.student-data-table tbody td {
+    padding: 13px 12px !important;
+    font-size: 13px;
+    color: #475467;
+}
+
+.student-data-table tbody tr:hover {
+    background-color: #f5f9ff !important;
+}
+
+/* Professional Export Buttons */
+
+.student-table-body .dt-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.student-table-body .dt-buttons .dt-button.export-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    flex: 0 0 auto !important;
+    padding: 9px 16px !important;
+    border: 1px solid transparent !important;
+    border-radius: 7px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    cursor: pointer;
+    opacity: 1 !important;
+}
+
+/* Copy Button */
+
+.student-table-body .dt-buttons .export-copy {
+    background: #e8f0ff !important;
+    color: #0d6efd !important;
+    border-color: #c6d9ff !important;
+}
+
+/* CSV Button */
+
+.student-table-body .dt-buttons .export-csv {
+    background: #e8f7ee !important;
+    color: #198754 !important;
+    border-color: #b8e5c8 !important;
+}
+
+/* Excel Button */
+
+.student-table-body .dt-buttons .export-excel {
+    background: #e2f4e9 !important;
+    color: #157347 !important;
+    border-color: #b5dfc5 !important;
+}
+
+/* PDF Button */
+
+.student-table-body .dt-buttons .export-pdf {
+    background: #fdeaea !important;
+    color: #dc3545 !important;
+    border-color: #f5c2c7 !important;
+}
+
+/* Print Button */
+
+.student-table-body .dt-buttons .export-print {
+    background: #edf0f4 !important;
+    color: #344054 !important;
+    border-color: #d5dce5 !important;
+}
+
+/* Export Button Hover */
+
+.student-table-body .dt-buttons .dt-button.export-btn:hover {
+    filter: brightness(0.96);
+    transform: translateY(-1px);
+}
+
+/* Search Box */
+
+.student-table-body .dt-search input {
+    border: 1px solid #dce2ea;
+    border-radius: 7px;
+    padding: 7px 12px;
+    margin-left: 8px;
+    outline: none;
+}
+
+.student-table-body .dt-search input:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+/* Pagination */
+
+.student-table-body .dt-paging .dt-paging-button {
+    border-radius: 6px !important;
+    font-size: 12px;
+}
+
+.student-table-body .dt-length select {
+    border-radius: 6px;
+    padding: 5px 8px;
+    border: 1px solid #dce2ea;
+}
+
+.student-table-body .dt-info {
+    color: #667085;
+    font-size: 13px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 576px) {
+    .student-table-header {
+        padding: 16px !important;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .student-table-body {
+        padding: 14px !important;
+    }
+
+    .student-table-body .dt-layout-row {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .student-table-body .dt-search input {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .student-table-body .dt-buttons {
+        gap: 5px;
+    }
+}
