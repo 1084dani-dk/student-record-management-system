@@ -21,3 +21,4 @@ backend/config/database.php
 .vscode/
 .idea/
 .DS_Store
+*.sql

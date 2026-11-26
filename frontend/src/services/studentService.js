@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost/student-api/api';
+const API_URL = '/api';
 
 // Add Student API
 export const addStudent = async (studentData) => {

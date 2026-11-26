@@ -1,11 +1,6 @@
 
 <?php
 
-// Allow React frontend to communicate with PHP
-header("Access-Control-Allow-Origin: http://localhost:5173");
-header("Access-Control-Allow-Credentials: true");
-header("Access-Control-Allow-Methods: PUT, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
 
 // Handle browser preflight request
@@ -185,6 +180,8 @@ try {
 
 } catch (PDOException $e) {
 
+    error_log($e->getMessage());
+
     // Duplicate Roll Number or Email
     if ($e->getCode() == "23000") {
 
@@ -207,6 +204,8 @@ try {
 
 } catch (Throwable $e) {
 
+    error_log($e->getMessage());
+
     http_response_code(500);
 
     echo json_encode([
@@ -214,5 +213,3 @@ try {
         "message" => "Server error"
     ]);
 }
-
-?>

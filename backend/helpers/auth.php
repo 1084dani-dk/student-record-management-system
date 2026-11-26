@@ -1,11 +1,11 @@
 
 <?php
 
-// Configure session cookie
+// Configure secure session cookie
 session_set_cookie_params([
     "lifetime" => 0,
     "path" => "/",
-    "secure" => false,
+    "secure" => true,
     "httponly" => true,
     "samesite" => "Lax"
 ]);

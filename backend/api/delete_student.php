@@ -3,12 +3,6 @@
 
 header("Content-Type: application/json");
 
-// Allow React frontend
-header("Access-Control-Allow-Origin: http://localhost:5173");
-header("Access-Control-Allow-Credentials: true");
-header("Access-Control-Allow-Methods: DELETE, POST, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type");
-
 // Handle preflight request
 if ($_SERVER["REQUEST_METHOD"] === "OPTIONS") {
     http_response_code(200);
@@ -95,6 +89,8 @@ try {
 
 } catch (Throwable $e) {
 
+    error_log($e->getMessage());
+
     http_response_code(500);
 
     echo json_encode([
@@ -102,5 +98,3 @@ try {
         "message" => "Server error"
     ]);
 }
-
-?>

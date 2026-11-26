@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost/student-api/api';
+const API_URL = '/api';
 
 // Admin Login
 export const loginAdmin = async (credentials) => {
